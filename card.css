@@ -88,33 +88,43 @@ body {
   transition: 5s
 }
 
+
 .unsichtbar {
   position: relative;
-  background-color: turquoise;
-  opacity: 1;
+
+  color: white;
   width: 70px;
   height: 70px;
   left: 212px;
   top: 179px;
 }
 
-
-
-.laufendertext {
-  position: absolute;
-  color: white;
-  font-size: 30px;
-
-  transform: rotate(90deg);
-  left: 0px;
-  top: 0px;
+.unsichtbar:hover .unsichtbar {
   opacity: 1;
 }
+
+
+
 
 .unsichtbar:hover .laufendertext {
-  opacity: 1;
+  position: absolute;
+  width: 329px;
+  height: 231px;
 
+  font-size: 30px;
+  margin: 0;
+  padding-top: 70px;
+  left: -182px;
+  top: -40px;
+
+  background-color: white;
+  color: red;
+  padding: 15px;
+  padding-bottom: 66px;
+  opacity: 0.5;
 }
+
+
 
 
 img {
