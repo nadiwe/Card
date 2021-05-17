@@ -1,0 +1,126 @@
+/* 
+ * Everything in here can be changed, 
+ * except the format of the card! 
+ * 
+ * Card-Format: 910px * 590px
+ */
+
+@font-face {
+  font-family: "RiformaLLWebTrial-MediumItalicTrial";
+  src: url("./");
+  src: url("./Fonts/RiformaLLWebTrial-MediumItalicTrial.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RiformaLLWebTrial-BoldItalicTrial";
+  src: url("./Fonts/RiformaLLWebTrial-BoldItalicTrial.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RiformaLLWebTrial-LightItalicTrial";
+  src: url("./Fonts/RiformaLLWebTrial-LightItalicTrial.woff") format("woff");
+}
+
+.card {
+  /* mimicks a quartet card game card size */
+  width: 430px;
+  height: 665px;
+
+  /* centering it */
+  margin: 10px auto;
+
+  /* background-color just here to make the card visible, can be changed */
+  background-color: white;
+
+  /* makes the appearance look more like a card, up to you to change */
+  border-radius: 10px;
+
+
+
+}
+
+
+
+
+
+
+body {
+  font-family: "RiformaLLWebTrial-LightItalicTrial";
+
+}
+
+
+
+.kreis {
+  top: 100px;
+  left: 48px;
+  position: relative;
+  background-color: red;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+
+
+
+}
+
+.kreisbewegt:hover {
+
+  top: 337px;
+  left: 174px;
+
+
+}
+
+.rechteck {
+  top: 112px;
+  left: 30px;
+  position: relative;
+  background-color: red;
+  height: 50px;
+  width: 307px;
+
+
+}
+
+.rechteckbewegt:hover {
+  transform: rotate(780deg)scale(0.5, 0.5);
+  transition: 5s
+}
+
+.unsichtbar {
+  position: relative;
+  background-color: turquoise;
+  opacity: 1;
+  width: 70px;
+  height: 70px;
+  left: 212px;
+  top: 179px;
+}
+
+
+
+.laufendertext {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+
+  transform: rotate(90deg);
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+}
+
+.unsichtbar:hover .laufendertext {
+  opacity: 1;
+
+}
+
+
+img {
+  position: absolute;
+  width: 430px;
+  height: 665px;
+  border-radius: 10px;
+
+}
