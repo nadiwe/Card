@@ -4,3 +4,4 @@ That's why I decided to discard my originally created idea and to give myself a 
 
 If the website would run over a server, I would have added a gzip compression.
 
+h
