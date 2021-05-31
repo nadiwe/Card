@@ -24,7 +24,9 @@
             height: 665px;
             margin: 10px auto;
             border: green 1px solid;
-            border-radius: 10px
+            border-radius: 10px;
+            position: absolute;
+            background-color: black;
         }
 
         .mouse-circle {
@@ -33,16 +35,31 @@
             height: 30px;
             background-color: red;
             border-radius: 50%;
-            pointer-events: none;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .overlay {
+            width: 430px;
+            height: 665px;
+            margin: 10px auto;
+
+            background-color: blue;
+            position: absolute;
         }
     </style>
+    <div class="overlay"></div>
     <div class=card>
-        <div class="mouse-circle"></div>
         <p><b> i'm simple</b> <br> i'm 551B <br><br> If the internet were a country, it would be the sixth most
             polluting
             country in
             the world <br>*Sustainable Web Design 2021</p>
+
     </div>
+
+    <div class="mouse-circle"></div>
+
+
     <script>
         let mouseCurser = document.querySelector(".mouse-circle");
         window.addEventListener('mousemove', curser);
